@@ -51,6 +51,7 @@
                                 <connections>
                                     <outlet property="avatarImageView" destination="nbM-x8-bEn" id="APQ-bs-hc6"/>
                                     <outlet property="usernameLabel" destination="Tq1-9b-LIK" id="QUu-Jv-vLW"/>
+                                    <segue destination="Ze2-BV-GnV" kind="show" id="Thp-9Z-aUg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -74,25 +75,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jNK-7i-dTh">
-                                <rect key="frame" x="32" y="52" width="311" height="311"/>
+                                <rect key="frame" x="32" y="96" width="311" height="311"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jNK-7i-dTh" secondAttribute="height" multiplier="311:311" id="IS2-l0-nc3"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4H-fr-Fzb">
-                                <rect key="frame" x="165" y="395" width="45" height="21"/>
+                                <rect key="frame" x="165" y="439" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tl-jZ-2Uf">
-                                <rect key="frame" x="172.5" y="448" width="30" height="21"/>
+                                <rect key="frame" x="172.5" y="492" width="30" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CI-fH-b5Q">
-                                <rect key="frame" x="167" y="501" width="41" height="21"/>
+                                <rect key="frame" x="167" y="545" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -114,6 +115,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZEv-vt-7JA"/>
                     </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="5tl-jZ-2Uf" id="ii4-ce-VPG"/>
+                        <outlet property="emailLabel" destination="4CI-fH-b5Q" id="495-FF-Fas"/>
+                        <outlet property="imageView" destination="jNK-7i-dTh" id="zQR-lt-NEd"/>
+                        <outlet property="nameLabel" destination="k4H-fr-Fzb" id="Phf-Qg-oVb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q15-TL-Kqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
